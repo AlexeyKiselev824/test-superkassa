@@ -1,0 +1,22 @@
+.form {
+    flex: 1 1 auto;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    min-height: 20rem;
+}
+
+.form__container {
+    max-width: 25rem;
+    padding: 1rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 5px;
+}
+
+@media (max-width: 57.875em) {
+    .form {
+        min-height: auto;
+        flex: 0 1 auto;
+    }
+}

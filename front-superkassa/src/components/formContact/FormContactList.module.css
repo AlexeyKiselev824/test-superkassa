@@ -1,0 +1,45 @@
+.form {
+    flex: 1 1 auto;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    min-height: 20rem;
+}
+
+.form__container {
+    min-width: 25rem;
+    padding: 0.4rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__title {
+    align-self: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    color: #1976d2;
+}
+
+.form__list {
+    padding: 0px 0px 10px 10px;
+}
+
+.form__list__item {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+@media (max-width: 57.875em) {
+    .form {
+        flex: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 26em) {
+    .form__title {
+        align-self: flex-start;
+    }
+}

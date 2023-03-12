@@ -1,0 +1,1 @@
+export const URL_ws = 'ws://localhost:5000';

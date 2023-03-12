@@ -1,0 +1,65 @@
+.input-block {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.input-phone {
+    flex: 1 1 auto;
+    max-width: 15.375rem;
+    border: 1px solid rgb(196, 196, 196);
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 1.8rem;
+    outline-color: #1976d2;
+    background-color: white;
+}
+
+.input-phone::placeholder {
+    font-size: 1.2rem;
+}
+
+.label {
+    position: absolute;
+    font-size: 0.98rem;
+    color: transparent;
+    top: 20px;
+    left: 15px;
+    color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    transition: all .1s linear;
+}
+
+.input-phone:focus+.label {
+    font-size: 0.8rem;
+    z-index: 1;
+    top: -7px;
+    background-color: #fff;
+    padding: 0 5px;
+    color: #1976d2;
+    font-weight: 100;
+}
+
+.input-phone:invalid {
+    outline-color: red;
+}
+
+.not-valid {
+    outline-color: red;
+}
+
+.message {
+    position: absolute;
+    padding-left: 10px;
+    bottom: -50px;
+    color: red;
+}
+
+@media (max-width: 29.25em) {
+    .input-phone {
+        flex: 1 1 auto;
+        width: 100%;
+        font-size: 1.2rem;
+    }
+}
