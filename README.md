@@ -6,6 +6,7 @@
 * TypeScript
 * Redux Toolkit
 * CSS modules
+* Material-UI
 * WebSocket
 * PostgreSQL (облачный сервис ElephantSQL)
 
