@@ -11,6 +11,6 @@ try {
 }
 
 // debag
-// await db.query(`DELETE FROM ${process.env.db_name}`);
+await db.query(`DELETE FROM ${process.env.db_name}`);
 
 export default db;
